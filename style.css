@@ -1,0 +1,200 @@
+
+
+body{
+    background-color:rgb(20, 12, 1);
+}
+.header{
+    
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 1px 1px black;
+    justify-content: space-between;
+    display: flex;
+}
+.header img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 10px;
+    
+}
+header h1{
+    color: whitesmoke;
+}
+.icon1{
+    font-size: 30px;
+    font-style: bold;
+    background-color: whitesmoke;
+}
+header nav{
+    display: flex;
+
+}
+header nav li{
+    display: flex;
+    text-decoration: none;
+    list-style:none;
+}
+header nav li a{
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+
+.main{
+    height: 1000px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.main h1{
+    color:white;
+}
+.masterdiv{
+    margin-top: 10%;
+    height: 1500px;
+    width: 100%;
+    background-color: burlywood;
+    color: rgb(20, 12, 1);
+    /* overflow: scroll; */
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    position: relative;
+    /* display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
+
+}
+.masterdiv .secA{
+    margin-top: 20px;
+}
+.secA h1{
+    margin-top: 40px;
+    font-size: 60px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    color: rgb(17, 10, 1);
+}
+.secB{
+    position: absolute;
+    height: 1200px;
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); 
+}
+.masters{
+    margin-top:100px;
+    height:480px;
+    width: 300px;
+    background-color:rgb(34, 1, 8);
+    color: white;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.masters:hover{
+    height: 495px;
+    width: 315px;
+    background-color: rgb(37, 21, 1);
+}
+
+
+.masters img{
+    height: 170px;
+    width: 190px;
+}
+.masters button{
+    height: 30px;
+    width: 200px;
+    background-color: rgb(2, 179, 2);
+    border: 0px solid white;
+    border: 10px;
+    margin-top: 10px;
+    box-shadow: 1px 1px white;
+    color: white;
+
+}
+.input{
+    margin-top: 5px;
+    height: 20px;
+    width: 200px;
+}
+.whatsappicon{
+    font-size: 15px;
+    color: white;
+}
+
+
+
+
+
+.search-box{
+        width: 700px;
+        position: relative;
+        border-radius: 16px;
+    }
+
+    input{
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .h2{
+        color: bisque;
+    }
+
+
+    /* Suggestion list */
+
+    .suggestions{
+
+        position: absolute;
+        top: 45px;
+        width: 100%;
+        background: white;
+        border: 1px solid #ccc;
+        border-top: none;
+        display: none;
+    }
+
+    .suggestions div{
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .suggestions div:hover{
+        background: #007bff;
+        color: white;
+    }
+
+
+    /* Result boxes */ 
+
+    .results{
+        margin-top: 30px;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        background: rgb(211, 21, 21);
+        padding: 15px;
+        width: 200px;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .card:hover{
+        background-color: rgb(93, 235, 27);
+    }

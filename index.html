@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body >
+    <header class="header" id="header">
+
+        <div class="img"><img src="/image.png" alt=""></div>
+        <h1>Technical Courses</h1>
+        
+        <nav>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">content</a></li>
+        </nav>
+
+    </header>
+
+
+    <main class="main" id="main">
+
+       
+</head>
+<body>
+
+
+
+    <h2 class="h2">Search Technology</h2>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="search...">
+        <div class="suggestions" id="suggestions"></div>
+    </div>
+
+    <div class="results" id="results"> 
+
+    </div>
+    
+    
+    
+    
+    
+    
+    <div class="masterdiv">
+
+        <section class="secA">
+            <h1>Enroll Courses</h1>
+        </section>
+            
+        <section class="secB">
+
+            <div class="masters">
+                <h3>C++</h3>
+                <img src="/c++img.webp" alt="">
+                <p>Enroll for C++</p>
+                <input type="text" class="input" id="name" placeholder="Name">
+                <input type="email" class="input" id="email" placeholder="email">
+                <input type="text" class="input" id="courseprice" placeholder="Course Price">
+                <button onclick="SendWhatsapp()"><i class="fa-brands fa-whatsapp whatsappicon"></i> SendWhatsapp</button>
+            </div>
+
+             <div class="masters">
+                <h3>Java</h3>
+                <img src="/java - Copy.jpg" alt="">
+                <p>Enroll for Java</p>
+                <input type="text" class="input" id="name" placeholder="Name">
+                <input type="email" class="input" id="email" placeholder="email">
+                <input type="text" class="input" id="courseprice" placeholder="Course Price">
+                <button onclick="SendWhatsapp()"><i class="fa-brands fa-whatsapp whatsappicon"></i> SendWhatsapp</button>
+            </div>
+            
+            <div class="masters">
+                <h3>Python</h3>
+                <img src="/c++img.webp" alt="">
+                <p>Enroll for Python</p>
+                <input type="text" class="input" id="name" placeholder="Name">
+                <input type="email" class="input" id="email" placeholder="email">
+                <input type="text" class="input" id="courseprice" placeholder="Course Price">
+                <button onclick="SendWhatsapp()"><i class="fa-brands fa-whatsapp whatsappicon"></i> SendWhatsapp</button>
+            </div>
+            
+            <div class="masters">
+                <h3>Data Analytics</h3>
+                <img src="/DA1.webp" alt="">
+                <p>Enroll for Data Analytics</p>
+                <input type="text" class="input" id="name" placeholder="Name">
+                <input type="email" class="input" id="email" placeholder="email">
+                <input type="text" class="input" id="courseprice" placeholder="Course Price">
+                <button onclick="SendWhatsapp()"><i class="fa-brands fa-whatsapp whatsappicon"></i> SendWhatsapp</button>
+            </div> 
+            
+            <div class="masters">
+                <h3>Data Science</h3>
+                <img src="/ds1.jpg" alt="">
+                <p>Enroll for Data Science</p>
+                <input type="text" class="input" id="name" placeholder="Name">
+                <input type="email" class="input" id="email" placeholder="email">
+                <input type="text" class="input" id="courseprice" placeholder="Course Price">
+                <button onclick="SendWhatsapp()"><i class="fa-brands fa-whatsapp whatsappicon"></i> SendWhatsapp</button>
+            </div>
+            
+             <div class="masters">
+                <h3>AIML</h3>
+                <img src="/ai2.webp" alt="">
+                <p>Enroll for AIML</p>
+                <input type="text" class="input" id="name" placeholder="Name">
+                <input type="email" class="input" id="email" placeholder="email">
+                <input type="text" class="input" id="courseprice" placeholder="Course Price">
+                <button onclick="SendWhatsapp()"><i class="fa-brands fa-whatsapp whatsappicon"></i> SendWhatsapp</button>
+            </div>
+
+             <div class="masters">
+                <h3>Cloud Computing</h3>
+                <img src="/cloud1.webp" alt="">
+                <p>Enroll for Cloud Computing</p>
+                <input type="text" class="input" id="name" placeholder="Name">
+                <input type="email" class="input" id="email" placeholder="email">
+                <input type="text" class="input" id="courseprice" placeholder="Course Price">
+                <button onclick="SendWhatsapp()"><i class="fa-brands fa-whatsapp whatsappicon"></i> SendWhatsapp</button>
+            </div>
+            
+            <div class="masters">
+                <h3>Quantum Computing</h3>
+                <img src="/quantum2_files.webp" alt="">
+                <p>Enroll for Quantum Computing</p>
+                <input type="text" class="input" id="name" placeholder="Name">
+                <input type="email" class="input" id="email" placeholder="email">
+                <input type="text" class="input" id="courseprice" placeholder="Course Price">
+                <button onclick="SendWhatsapp()"><i class="fa-brands fa-whatsapp whatsappicon"></i>SendWhatsapp</button>
+            </div>
+        </section>
+
+        </div>
+        
+    </main>
+
+    <footer class="footer" id="footer"></footer>
+
+
+    <script>
+
+    function SendWhatsapp(){
+            
+        var name=document.getElementById("name").value;
+        var email=document.getElementById("email").value;
+        var courseprice=document.getElementById("courseprice").value;    
+        
+        var WhatsAppNumber = "8827504071";
+
+        var text = "Name:"+ name + "%0A email:"+ email + "%0A courseprice:" + Courseprice;
+
+        var url = "https://wa.me/91" + WhatsAppNumber + "?text=" + text;
+        
+        window.open(url);
+    }
+
+
+
+
+     const data = {
+            "Data Science":["Python","Machine Learning","SQL","Statistics"],
+            "Data Analytics":["Excel","Power BI","SQL","Python"],
+            "Cloud":["AWS","Azure","Google Cloud"],
+            "Web Development":["HTML","CSS","JS","React js","node js","mongo db","express js","ramgopal technology"]
+        };
+        const input =document.getElementById("searchinput");
+        const suggestionBox=document.getElementById("suggestion");
+        const resultBox=document.getElementById("result");
+
+        input.addEventListener("keyup",() => {
+            const value = input.value.toLowerCase();
+            suggestionBox.innerHTML="";
+        
+        if(value === ""){
+            suggestionBox.style.display="none";
+            return;
+        }
+        Object.keys(data).forEach(tag =>{
+            if(tag.toLowerCase().includes(value)){
+                const div = document.createElement("div");
+                div.innerText = tag;
+                div.onclick = () => showResult(tag);
+                suggestionBox.appendClild(div);
+            }
+        });
+        suggestionBox.style.display ="block";
+    });
+    function showResult(tag){
+        input.value = tag;
+        suggestionBox.style.display="none";
+        resultBox.innerHTML="";
+
+        data[tag].forEach(item => {
+            const card = document.createElement("div");
+            card.className="card";
+            card.innerHTML=`<h3> ${item}</h3>
+                            <p> ${item} related to ${tag}</p>`;
+            resultBox.appendClild(card);
+
+        });
+    }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
